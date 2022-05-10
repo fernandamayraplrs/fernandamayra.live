@@ -1,528 +1,144 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-<!-- Mirrored from protocolobarrigazeros.com.br/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 May 2022 13:15:41 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<link rel="stylesheet" href="../stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-<link rel="preconnect" href="https://fonts.googleapis.com/" />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Dosis:wght@200;300;400;500;600;700;800&amp;family=Oswald:wght@200;300;400;500;600;700&amp;family=Signika:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/com.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>Local index - HTTrack Website Copier</title>
+  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<style type="text/css">
+	<!--
 
-<title>Protocolo Zero Barriga</title>
-<link rel="icon" type="image/png" href="assets/img/favicon.png" />
-<style type="text/css">
-      header {
-        color: white;
-        background-image: url("assets/img/bg.jpg");
-        background-color: rgba(0, 0, 0, 0.6);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-blend-mode: darken;
-      }
-    </style>
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
 
-<script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "../www.googletagmanager.com/gtm5445.html?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NTBXBKL");
-    </script>
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
+
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
 
 </head>
-<body>
 
-<noscript><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NTBXBKL"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
 
-<header class="py-4">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8 text-center">
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="protocolobarrigazeros.com.br/index.html">
+						Protocolo Zero Barriga
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=protocolobarrigazeros.com.br/index.html">
 
-<img class="img-fluid" src="assets/img/ultrasecreto.svg" />
 
-<h3 class="my-4">
-<b>MILHARES DE PARTICIPANTES EM TODO O BRASIL JÁ OBTIVERAM RESULTADOS INCRÍVEIS.</b
-              >
-</h3>
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
 
-<script type="text/javascript" id="scr_62798a94c3436c000911949a">
-              var s = document.createElement("script");
-              (s.src =
-                "../scripts.converteai.net/fec0d61f-c2df-4eb3-8834-ad21bddd85f8/players/62798a94c3436c000911949a/player.js"),
-                (s.async = !0),
-                document.head.appendChild(s);
-            </script>
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
 
-<div id="cta1" class="mt-4 d-none">
-<a href="https://pay.kiwify.com.br/MYLtYJJ" class="a-btn" style="text-decoration: none">
-<span class="span-btn">QUERO OBTER ACESSO!</span>
-<span class="span-btn2">(atenção: vagas limitadas)</span>
-</a>
-</div>
-
-<h3 class="my-4">
-<b>ASSISTA ESSA CURTA APRESENTAÇÃO E GARANTA JÁ A SUA VAGA NO MAIOR PROGRAMA DE EMAGRECIMENTO DO BRASIL.</b
-              >
-</h3>
-</div>
-</div>
-</div>
-</header>
-<section class="comments py-4">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8">
-<div class="fb-comments" style="margin-top: 5px">
-<div class="fb-comments-header">
-<span>21 comentarios</span>
-</div>
-<div class="fb-comments-wrapper" id="2">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m2.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Valesca Silva</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Amei vou fazer hoje mesmo pois estou em processo de
-emagrecimento. Muito obrigada 😘
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>8</likes>
-<date>4 min</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="3">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m3.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Vitória Pereira</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Ele também me ajudou perdi 22kg obrigado, e ajuda até
-hoje com essas receitas deliciosas
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>9</likes>
-<date>5 min</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="4">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m4.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Mariana Martins</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Esse vídeo mudou minha vida, já são 20 kilos a menos em
-4 meses ,agradecida
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>11</likes>
-<date>12 min</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="5">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m5.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Juliana Castro</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Tomei essa vitamina durante 1 mês, acompanhada da dieta
-de açúcar e carboidratos, perdir 5 quilos, e me sentia
-bem melhor, faz um ano, agora vou voltar a tomar
-novamente.
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>15</likes>
-<date>19 min</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="6">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m6.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Isabella Lopes</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Estou feliz, a 7 meses atrás eu estava com 78kg e hoje
-estou com 54kg até postei a respeito no meu perfil aqui
-no face o antes e depois 😘😘😘
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>17</likes>
-<date>24 min</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="7">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m7.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Roberta Gomes</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Realmente funciona, minha barriga tem diminuído a cada
-dia. Obrigada por compartilhar 🥰
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>18</likes>
-<date>26 min</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="9">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m11.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Rafaela Souza</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Emagrece mesmo gente receita testada e aprovada
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>22</likes>
-<date>39 min</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<button class="fb-comments-loadmore" onclick="javascript:loadMore();">
-Carregar mais 5 comentários
-</button>
-<div style="display: none" id="more">
-<div class="fb-comments-wrapper">
-<table class="fb-comments-comment" id="10">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m12.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Ana Sofia</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Maravilhosa melhor de todas fez 7dias tomando e 7 klos
-já conseguir eliminar tô muito feliz obrigado 😍😍😍
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>41</likes>
-<date>1 h</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="11">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m15.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Laura Flores</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Eu já estou tomando, já eliminei 7 kls, já fez muita
-diferença, minhas roupas estavam todas apertadas,
-ágora já estão largas, estou num pós operatório de
-coluna por isso engordei muito 15 Kg, estava sentindo
-muita dor agora amenizou muito depois que emagreci já
-consigo andar mais q antes 🙏🙏🙏🙏🙏🙏
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
- ·
-<reply>Responder</reply>
-·
-<likes>40</likes>
-<date>1 h</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="12">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m16.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Daniela Costa</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Muito Obrigada tem me ajudado e muito,Adorei ...Durmo
-super bem e vendo resultado ..🌹🥰🙋
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>47</likes>
-<date>1 h</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper" id="13">
-<table class="fb-comments-comment">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m17.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Juliana Dias</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Em duas semanas comecei a ver resultados, muito bom
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>50</likes>
-<date>1 h</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fb-comments-wrapper">
-<table class="fb-comments-comment" id="14">
-<tbody>
-<tr>
-<td rowspan="3" class="fb-comments-comment-img">
-<img src="assets/img/comentarios/m18.jpg" />
-</td>
-<td>
-<font class="fb-comments-comment-name">
-<name>Isabelle Correia</name>
-</font>
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-text">
-Meu irmão perdeu 6 kl em 15 dias... vou começar hj
-rsrs
-</td>
-</tr>
-<tr>
-<td class="fb-comments-comment-actions">
-<like>Curtir</like>
-·
-<reply>Responder</reply>
-·
-<likes>66</likes>
-<date>1 h</date>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-
-<div id="cta2" class="mt-4 d-none">
-<a href="https://pay.kiwify.com.br/MYLtYJJ" class="a-btn" style="text-decoration: none">
-<span class="span-btn">QUERO OBTER ACESSO!</span>
-<span class="span-btn2">(atenção: vagas limitadas)</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<footer class="bg-dark py-3 text-center">
-<div class="text-white">
-<a href="termos.html" class="text-white">Termos de Uso</a> |
-<a href="privacidade.html" class="text-white">Política de Privacidade</a
-        >
-</div>
-<p class="fb-afiliado">
-Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.
-</p>
-</footer>
-<script type="text/javascript">
-      setTimeout(() => {
-        document.getElementById("cta1").classList.remove("d-none");
-        document.getElementById("cta2").classList.remove("d-none");
-      }, 1260000); // temporização da Call to Action (em milissegundos)
-    </script>
-<script src="../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="../stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="assets/js/com.js"></script>
 </body>
 
-<!-- Mirrored from protocolobarrigazeros.com.br/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 May 2022 13:15:52 GMT -->
 </html>
+
+
